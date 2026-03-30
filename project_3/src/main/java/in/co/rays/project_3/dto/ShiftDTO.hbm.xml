@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Feb-2026, 12:25:23 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.ShiftDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="ShiftDTO" lazy="false">
+        <property name="ShiftId" type="java.lang.Long">
+            <column name="SHIFTID" />
+        </property>
+        <property name="ShiftName" type="java.lang.String">
+            <column name="SHIFTNAME" />
+        </property>
+        <property name="EndTime" type="java.time.LocalTime">
+            <column name="ENDTIME" />
+        </property>
+        <property name="ShiftCode" type="java.lang.String">
+            <column name="SHIFTCODE" />
+        </property>
+        <property name="StartTime" type="java.time.LocalTime">
+            <column name="STARTTIME" />
+        </property>
+    </subclass>
+</hibernate-mapping>

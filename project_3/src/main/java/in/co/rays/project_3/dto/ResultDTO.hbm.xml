@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <subclass name="in.co.rays.project_3.dto.ResultDTO"
+              extends="in.co.rays.project_3.dto.BaseDTO"
+              discriminator-value="ResultDTO"
+              lazy="false">
+
+        <!-- ID mapping (IMPORTANT) -->
+        <property name="id" type="java.lang.Long">
+            <column name="ID"/>
+        </property>
+
+        <property name="resultId" type="java.lang.Long">
+            <column name="RESULTID"/>
+        </property>
+
+        <property name="resultStatus" type="java.lang.String">
+            <column name="RESULTSTATUS"/>
+        </property>
+
+        <property name="studentName" type="java.lang.String">
+            <column name="STUDENTNAME"/>
+        </property>
+
+        <property name="resultCode" type="java.lang.String">
+            <column name="RESULTCODE"/>
+        </property>
+
+        <property name="marks" type="java.lang.Integer">
+            <column name="MARKS"/>
+        </property>
+
+    </subclass>
+
+</hibernate-mapping>

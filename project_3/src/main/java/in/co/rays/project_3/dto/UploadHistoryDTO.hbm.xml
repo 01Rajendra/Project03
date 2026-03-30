@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Mar-2026, 12:01:17 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.UploadHistoryDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="UploadHistoryDTO" lazy="false">
+        <property name="uploadId" type="java.lang.Long">
+            <column name="UPLOADID" />
+        </property>
+        <property name="fileName" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+        <property name="uploadCode" type="java.lang.String">
+            <column name="UPLOADCODE" />
+        </property>
+        <property name="uploadStatus" type="java.lang.String">
+            <column name="UPLOADSTATUS" />
+        </property>
+        <property name="uploadTime" type="java.time.LocalDateTime">
+            <column name="UPLOADTIME" />
+        </property>
+    </subclass>
+</hibernate-mapping>

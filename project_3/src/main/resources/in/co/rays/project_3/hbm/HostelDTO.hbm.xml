@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+    <class name="HostelDTO" table="ST_HOSTEL">
+
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+
+        <property name="hostelName" type="java.lang.String">
+            <column name="HOSTEL_NAME" />
+        </property>
+
+        <property name="capacity" type="int">
+            <column name="CAPACITY" />
+        </property>
+
+        <property name="numberOfRooms" type="int">
+            <column name="NO_OF_ROOMS" />
+        </property>
+
+        <!-- Single / Double / Triple / Dormitory -->
+        <property name="occupancy" type="java.lang.String">
+            <column name="OCCUPANCY" />
+        </property>
+
+        <!-- AC / Non-AC -->
+        <property name="roomType" type="java.lang.String">
+            <column name="ROOM_TYPE" />
+        </property>
+
+        <!-- Attached / Common -->
+        <property name="washroomStatus" type="java.lang.String">
+            <column name="WASHROOM_STATUS" />
+        </property>
+
+        <!-- Vacant / Full -->
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+
+        <!-- Fees as String -->
+        <property name="fees" type="java.lang.String">
+            <column name="FEES" />
+        </property>
+
+        <!-- Audit Fields from BaseDTO -->
+
+        <property name="createdBy" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+
+        <property name="modifiedBy" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+
+        <property name="createdDatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATETIME" />
+        </property>
+
+        <property name="modifiedDatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATETIME" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>

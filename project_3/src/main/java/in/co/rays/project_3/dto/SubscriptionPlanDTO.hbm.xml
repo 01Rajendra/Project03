@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24-Mar-2026, 12:36:56 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.SubscriptionPlanDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="SubscriptionPlanDTO" lazy="false">
+        <property name="planId" type="java.lang.Long">
+            <column name="PLANID" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="PRICE" />
+        </property>
+        <property name="planName" type="java.lang.String">
+            <column name="PLANNAME" />
+        </property>
+        <property name="validityDays" type="java.lang.Integer">
+            <column name="VALIDITYDAYS" />
+        </property>
+    </subclass>
+</hibernate-mapping>

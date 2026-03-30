@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-Mar-2026, 12:15:02 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+	<class name="BranchManagerDTO" table="ST_BRANCH_MANAGER">
+		<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="contactNumber" type="java.lang.String">
+			<column name="CONTACTNUMBER" />
+		</property>
+		<property name="branchName" type="java.lang.String">
+			<column name="BRANCHNAME" />
+		</property>
+		<property name="managerName" type="java.lang.String">
+			<column name="MANAGERNAME" />
+		</property>
+	</class>
+</hibernate-mapping>

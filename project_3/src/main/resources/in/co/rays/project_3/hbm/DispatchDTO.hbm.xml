@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+	<class name="DispatchDTO" table="ST_DISPATCH">
+
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+
+		<property name="dispatchId" type="java.lang.Long">
+			<column name="DISPATCH_ID" />
+		</property>
+
+		<property name="dispatchDate" type="java.util.Date">
+			<column name="DISPATCH_DATE" />
+		</property>
+
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+
+		<property name="courierName" type="java.lang.String">
+			<column name="COURIER_NAME" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 25-Mar-2026, 12:12:14 PM by Hibernate Tools 3.5.0.Final -->
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+	<class name="PhotographerDTO" table="ST_PHOTOGRAPHER">
+
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="photographerId" type="java.lang.Long">
+			<column name="PHOTOGRAPHERID" />
+		</property>
+		<property name="charges" type="java.lang.Double">
+			<column name="CHARGES" />
+		</property>
+		<property name="eventType" type="java.lang.String">
+			<column name="EVENTTYPE" />
+		</property>
+		<property name="photographerName" type="java.lang.String">
+			<column name="PHOTOGRAPHERNAME" />
+		</property>
+	</class>
+</hibernate-mapping>

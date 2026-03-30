@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+	<class name="ResultDTO" table="ST_RESULT">
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+        
+
+        <property name="resultId" type="java.lang.Long">
+            <column name="RESULTID"/>
+        </property>
+
+        <property name="resultStatus" type="java.lang.String">
+            <column name="RESULTSTATUS"/>
+        </property>
+
+        <property name="studentName" type="java.lang.String">
+            <column name="STUDENTNAME"/>
+        </property>
+
+        <property name="resultCode" type="java.lang.String">
+            <column name="RESULTCODE"/>
+        </property>
+
+        <property name="marks" type="java.lang.Integer">
+            <column name="MARKS"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="in.co.rays.project_3.dto">
+
+	<class name="BankDTO" table="ST_BANK">
+
+		<id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+
+		<property name="Bank_Name" type="java.lang.String">
+			<column name="BANK_NAME" />
+		</property>
+
+		<property name="Customer_Name" type="java.lang.String">
+			<column name="CUSTOMER_NAME" />
+		</property>
+
+		<property name="Address" type="java.lang.String">
+			<column name="ADDRESS" />
+		</property>
+
+		<property name="Dob" type="java.util.Date">
+			<column name="DOB" />
+		</property>
+
+		<property name="Account_NO" type="java.lang.String">
+			<column name="ACCOUNT_NO" />
+		</property>
+
+	</class>
+
+</hibernate-mapping>
